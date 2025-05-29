@@ -8,8 +8,26 @@
 </script>
 
 <SvelteSeo
-    title="Simple page title"
-    description="Simple description about a page"
+    title="Home | {data.information.data.information.name}"
+    description={data.information.data.information.about}
+    canonical="https://toraktatech.com/"
+    keywords="torkata, torkata tech, torkata tech solution, jasa pembuatan website, jasa pembuatan aplikasi, jasa pembuatan software, jasa pembuatan mobile app, jasa pembuatan desktop app, jasa pembuatan saas, digital design, web application, mobile application, desktop application, saas, training and workshop"
+    author="Torkata Tech Solution"
+    ogTitle="Home | {data.information.data.information.name}"
+    ogDescription={data.information.data.information.about}
+    ogImage="https://toraktatech.com/images/logo.png"
+    ogUrl="https://toraktatech.com/"
+    twitterTitle="Home | {data.information.data.information.name}"
+    twitterDescription={data.information.data.information.about}
+    twitterImage="https://toraktatech.com/images/logo.png"
+    twitterUrl="https://toraktatech.com/"
+    twitterCard="summary_large_image"
+    twitterSite="@torkata"
+    twitterCreator="@torkata"
+    robots="index, follow"
+    viewport="width=device-width, initial-scale=1"
+    lang="id"
+    charset="UTF-8"
 />
 
 <Home1 />
@@ -977,45 +995,55 @@
         <!-- START TEAM -->
         <div class="row mt-5">
             {#each data.home.data.teams as team}
-            <div class="col-md-6 col-lg-3">
-                <div class="card team-box border-0 bg-transparent mt-3">
-                    <div class="position-relative mx-auto">
-                        <img
-                            src="{team.photo}"
-                            alt="team"
-                            height="200"
-                            class="img-fluid rounded-circle img-thumbnail"
-                        />
-                        <ul class="team-social list-unstyled">
-                            <li>
-                                <a href="{team.linkedin}" class="primary-link" aria-label="LinkedIn"
-                                    ><i class="mdi mdi-linkedin"></i></a
-                                >
-                            </li>
-                            <li class="my-1">
-                                <a href="{team.instagram}" class="primary-link" aria-label="Instagram"
-                                    ><i class="mdi mdi-instagram"></i></a
-                                >
-                            </li>
-                            <li>
-                                <a href="{team.github}" class="primary-link" aria-label="Github"
-                                    ><i class="mdi mdi-github"></i></a
-                                >
-                            </li>
-                        </ul>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-box border-0 bg-transparent mt-3">
+                        <div class="position-relative mx-auto">
+                            <img
+                                src={team.photo}
+                                alt="team"
+                                height="200"
+                                class="img-fluid rounded-circle img-thumbnail"
+                            />
+                            <ul class="team-social list-unstyled">
+                                <li>
+                                    <a
+                                        href={team.linkedin}
+                                        class="primary-link"
+                                        aria-label="LinkedIn"
+                                        ><i class="mdi mdi-linkedin"></i></a
+                                    >
+                                </li>
+                                <li class="my-1">
+                                    <a
+                                        href={team.instagram}
+                                        class="primary-link"
+                                        aria-label="Instagram"
+                                        ><i class="mdi mdi-instagram"></i></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href={team.github}
+                                        class="primary-link"
+                                        aria-label="Github"
+                                        ><i class="mdi mdi-github"></i></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="mb-0">
+                                <a href="#" class="primary-link">{team.name}</a>
+                            </h6>
+                            <p class="text-muted fs-14 mb-0">
+                                {team.position ?? "-"}
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-body text-center">
-                        <h6 class="mb-0">
-                            <a href="#" class="primary-link">{team.name}</a>
-                        </h6>
-                        <p class="text-muted fs-14 mb-0">{team.position ?? "-"}</p>
-                    </div>
+                    <!--end card-->
                 </div>
-                <!--end card-->
-            </div>
             {/each}
             <!--end col-->
-
         </div>
         <!--end row-->
         <!--END TEAM-->
@@ -1072,7 +1100,6 @@
             </div>
         </div>
         <div class="row">
-
             <!-- {data.home.news} -->
             {#each data.home.data.news as news}
                 <!-- <li>{news}</li> -->
@@ -1080,7 +1107,7 @@
                     <div class="card blog-box border-0 mt-4">
                         <div class="blog-img position-relative">
                             <img
-                                src="{news.thumbnail}"
+                                src={news.thumbnail}
                                 alt="Blog"
                                 style="height: 250px; object-fit: cover;"
                                 class="img-fluid rounded"
@@ -1096,7 +1123,8 @@
                                 <small
                                     ><i
                                         class="mdi mdi-clock-outline fs-17 align-middle me-1"
-                                    ></i> {news.created_at}</small
+                                    ></i>
+                                    {news.created_at}</small
                                 >
                             </div>
                         </div>
@@ -1107,7 +1135,7 @@
                                 </h6>
                             </a>
                             <p class="text-muted">
-                                {news.content.substring(0, 100)}... 
+                                {news.content.substring(0, 100)}...
                             </p>
                             <div class="mt-3">
                                 <a href="#" class="text-primary"
@@ -1146,17 +1174,24 @@
                     <p class="mb-3">
                         <i
                             class="mdi mdi-email-outline align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">{data.information.data.information.email}</span>
+                        ></i>
+                        <span class="fw-medium"
+                            >{data.information.data.information.email}</span
+                        >
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-web align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">www.torakatatech.com</span>
+                        ></i>
+                        <span class="fw-medium">www.torakatatech.com</span>
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-phone align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">{data.information.data.information.phone}</span>
+                        ></i>
+                        <span class="fw-medium"
+                            >{data.information.data.information.phone}</span
+                        >
                     </p>
                     <p class="mb-3">
                         <i
