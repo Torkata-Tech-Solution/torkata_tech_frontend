@@ -1,7 +1,12 @@
 // src/routes/about/+page.js
-export function load({fetch}) {
+export async function load({ fetch }) {
+  const res = await fetch('https://admin.torkatatech.com/api/v1/home');
+  const home = await res.json();
+
+  console.log('Home data:', home.data.news);
+  
+
   return {
-    title: 'Tentang Kami - My Company',
-    description: 'Halaman tentang perusahaan kami yang luar biasa.'
+    home,
   };
 }

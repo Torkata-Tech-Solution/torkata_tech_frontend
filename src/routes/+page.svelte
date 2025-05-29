@@ -1,18 +1,19 @@
 <!-- START HOME -->
 <script>
-  import SvelteSeo from "svelte-seo";
-  import Home1 from '$lib/components/home1.svelte';
+    import SvelteSeo from "svelte-seo";
+    import Home1 from "$lib/components/home1.svelte";
     import Home2 from "$lib/components/home2.svelte";
+
+    const { data } = $props();
 </script>
 
 <SvelteSeo
-  title="Simple page title"
-  description="Simple description about a page"
+    title="Simple page title"
+    description="Simple description about a page"
 />
 
-<Home1/>
+<Home1 />
 <!-- <Home2/> -->
-
 
 <!-- <div class="position-relative">
     <div class="shape overflow-hidden text-white position-absolute">
@@ -49,7 +50,8 @@
                 <div class="text-center mb-5">
                     <h3>Layanan Kami</h3>
                     <p class="text-muted">
-                        Layanan Kami adalah solusi digital untuk mengembangkan bisnis dan institusi anda 
+                        Layanan Kami adalah solusi digital untuk mengembangkan
+                        bisnis dan institusi anda
                     </p>
                 </div>
             </div>
@@ -66,7 +68,8 @@
                         <div class="mt-4">
                             <h6 class="mb-3 fs-17">Digital Design</h6>
                             <p class="text-muted">
-                                Layanan desain digital untuk kebutuhan branding, promosi, dan pengembangan bisnis Anda.
+                                Layanan desain digital untuk kebutuhan branding,
+                                promosi, dan pengembangan bisnis Anda.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -93,7 +96,9 @@
                         <div class="mt-4">
                             <h6 class="mb-3 fs-17">Web Application</h6>
                             <p class="text-muted">
-                                Layanan pembuatan aplikasi web untuk otomasi bisnis, sistem informasi, dan solusi digital berbasis web sesuai kebutuhan Anda.
+                                Layanan pembuatan aplikasi web untuk otomasi
+                                bisnis, sistem informasi, dan solusi digital
+                                berbasis web sesuai kebutuhan Anda.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -120,7 +125,9 @@
                         <div class="mt-4">
                             <h6 class="mb-3 fs-17">Mobile Application</h6>
                             <p class="text-muted">
-                                Layanan pembuatan aplikasi mobile (Android/iOS) agar bisnis dan layanan Anda mudah diakses pengguna di mana saja.
+                                Layanan pembuatan aplikasi mobile (Android/iOS)
+                                agar bisnis dan layanan Anda mudah diakses
+                                pengguna di mana saja.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -147,7 +154,10 @@
                         <div class="mt-4">
                             <h6 class="mb-3 fs-17">Desktop Application</h6>
                             <p class="text-muted">
-                                Layanan pembuatan aplikasi desktop untuk kebutuhan bisnis atau institusi Anda, memastikan performa tinggi dan kemudahan integrasi dengan sistem yang sudah ada.
+                                Layanan pembuatan aplikasi desktop untuk
+                                kebutuhan bisnis atau institusi Anda, memastikan
+                                performa tinggi dan kemudahan integrasi dengan
+                                sistem yang sudah ada.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -172,9 +182,15 @@
                             <i class="mdi mdi-application"></i>
                         </div>
                         <div class="mt-4">
-                            <h6 class="mb-3 fs-17">SaaS (Software as a Service)</h6>
+                            <h6 class="mb-3 fs-17">
+                                SaaS (Software as a Service)
+                            </h6>
                             <p class="text-muted">
-                                Layanan pengembangan dan penyediaan aplikasi SaaS (Software as a Service) yang dapat diakses secara online, memudahkan bisnis Anda dalam mengelola operasional tanpa perlu infrastruktur tambahan.
+                                Layanan pengembangan dan penyediaan aplikasi
+                                SaaS (Software as a Service) yang dapat diakses
+                                secara online, memudahkan bisnis Anda dalam
+                                mengelola operasional tanpa perlu infrastruktur
+                                tambahan.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -201,7 +217,10 @@
                         <div class="mt-4">
                             <h6 class="mb-3 fs-17">Training & Workshop</h6>
                             <p class="text-muted">
-                                Layanan pelatihan dan workshop untuk meningkatkan kemampuan tim Anda di bidang teknologi, pengembangan perangkat lunak, dan transformasi digital.
+                                Layanan pelatihan dan workshop untuk
+                                meningkatkan kemampuan tim Anda di bidang
+                                teknologi, pengembangan perangkat lunak, dan
+                                transformasi digital.
                             </p>
                         </div>
                         <div class="feature-link">
@@ -233,7 +252,9 @@
                 <div class="text-center mb-4">
                     <h3>How It Works?</h3>
                     <p class="text-muted">
-                        Proses kerja kami dimulai dari memahami kebutuhan Anda, merancang solusi yang tepat, hingga mengembangkan dan mengimplementasikan teknologi terbaik untuk bisnis Anda.
+                        Proses kerja kami dimulai dari memahami kebutuhan Anda,
+                        merancang solusi yang tepat, hingga mengembangkan dan
+                        mengimplementasikan teknologi terbaik untuk bisnis Anda.
                     </p>
                 </div>
             </div>
@@ -258,7 +279,11 @@
                                 >
                                     <h5 class="fs-18">Ceritakan ide Anda</h5>
                                     <p class="text-muted mb-0">
-                                        Kami siap mendengarkan kebutuhan dan ide Anda untuk dikembangkan menjadi solusi digital yang tepat guna. Tim kami akan membantu merancang dan mewujudkan visi Anda dengan teknologi terbaik.
+                                        Kami siap mendengarkan kebutuhan dan ide
+                                        Anda untuk dikembangkan menjadi solusi
+                                        digital yang tepat guna. Tim kami akan
+                                        membantu merancang dan mewujudkan visi
+                                        Anda dengan teknologi terbaik.
                                     </p>
                                 </div>
                             </div>
@@ -274,9 +299,17 @@
                                 <div
                                     class="works-description-left text-start bg-light mx-lg-3 mx-4 text-lg-end"
                                 >
-                                    <h5 class="fs-18">Diskusikan kebutuhan Anda</h5>
+                                    <h5 class="fs-18">
+                                        Diskusikan kebutuhan Anda
+                                    </h5>
                                     <p class="text-muted mb-0">
-                                        Setelah memahami ide Anda, kami akan berdiskusi lebih lanjut untuk merumuskan kebutuhan dan tujuan bisnis Anda secara detail. Proses ini memastikan solusi yang kami tawarkan benar-benar sesuai harapan dan memberikan nilai tambah maksimal.
+                                        Setelah memahami ide Anda, kami akan
+                                        berdiskusi lebih lanjut untuk merumuskan
+                                        kebutuhan dan tujuan bisnis Anda secara
+                                        detail. Proses ini memastikan solusi
+                                        yang kami tawarkan benar-benar sesuai
+                                        harapan dan memberikan nilai tambah
+                                        maksimal.
                                     </p>
                                 </div>
                             </div>
@@ -313,7 +346,15 @@
                                 >
                                     <h5 class="fs-18">Riset & Pengembangan</h5>
                                     <p class="text-muted mb-0">
-                                        Setelah kebutuhan dan tujuan bisnis Anda jelas, tim kami akan melakukan riset dan pengembangan untuk merancang solusi digital yang inovatif, efektif, dan sesuai dengan kebutuhan Anda. Kami memastikan setiap solusi yang dihasilkan dapat diimplementasikan dengan baik dan memberikan dampak positif bagi bisnis Anda.
+                                        Setelah kebutuhan dan tujuan bisnis Anda
+                                        jelas, tim kami akan melakukan riset dan
+                                        pengembangan untuk merancang solusi
+                                        digital yang inovatif, efektif, dan
+                                        sesuai dengan kebutuhan Anda. Kami
+                                        memastikan setiap solusi yang dihasilkan
+                                        dapat diimplementasikan dengan baik dan
+                                        memberikan dampak positif bagi bisnis
+                                        Anda.
                                     </p>
                                 </div>
                             </div>
@@ -342,12 +383,15 @@
                 <div class="text-center text-white">
                     <h3 class="mb-3">Video Presentation</h3>
                     <p>
-                        Mulai bekerja dengan Torkata Tech Solution yang dapat menyediakan semua yang Anda butuhkan untuk meningkatkan awareness, mendatangkan traffic, dan membangun koneksi.
+                        Mulai bekerja dengan Torkata Tech Solution yang dapat
+                        menyediakan semua yang Anda butuhkan untuk meningkatkan
+                        awareness, mendatangkan traffic, dan membangun koneksi.
                     </p>
                     <a
                         href="#presentationVideo"
                         class="play-btn mt-4"
                         data-bs-toggle="modal"
+                        aria-label="video"
                     >
                         <i class="mdi mdi-play text-white"></i>
                     </a>
@@ -373,7 +417,9 @@
                 <div class="text-center mb-5">
                     <h3>Apa yang dikatakan oleh client kami?</h3>
                     <p class="text-muted mt-2 mb-0">
-                        Klien kami sangat puas dengan layanan yang kami berikan, mulai dari konsultasi hingga implementasi solusi digital yang efektif dan inovatif.
+                        Klien kami sangat puas dengan layanan yang kami berikan,
+                        mulai dari konsultasi hingga implementasi solusi digital
+                        yang efektif dan inovatif.
                     </p>
                 </div>
             </div>
@@ -867,16 +913,20 @@
 <!-- END FAQ -->
 
 <!-- START ABOUT -->
-<section class="section " id="about">
+<section class="section" id="about">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="text-center">
                     <h3>
-                        Kami adalah tim dinamis yang terdiri dari talenta inovatif & ahli di bidang teknologi
+                        Kami adalah tim dinamis yang terdiri dari talenta
+                        inovatif & ahli di bidang teknologi
                     </h3>
                     <p class="text-muted pt-2">
-                        Kami berkomitmen menghadirkan solusi digital terbaik melalui kolaborasi, kreativitas, dan keahlian di bidang IT untuk mendukung pertumbuhan bisnis dan institusi Anda.
+                        Kami berkomitmen menghadirkan solusi digital terbaik
+                        melalui kolaborasi, kreativitas, dan keahlian di bidang
+                        IT untuk mendukung pertumbuhan bisnis dan institusi
+                        Anda.
                     </p>
                 </div>
             </div>
@@ -908,7 +958,7 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="text-center mt-3">
-                    <h3 class="counter_value" data-target="608"></h3>
+                    <h3 class="counter_value" data-target="608">0</h3>
                     <p class="text-muted">Team Members</p>
                 </div>
             </div>
@@ -916,7 +966,7 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="text-center mt-3">
-                    <h3 class="counter_value" data-target="252"></h3>
+                    <h3 class="counter_value" data-target="252">0</h3>
                     <p class="text-muted">Employee</p>
                 </div>
             </div>
@@ -926,160 +976,46 @@
 
         <!-- START TEAM -->
         <div class="row mt-5">
+            {#each data.home.data.teams as team}
             <div class="col-md-6 col-lg-3">
                 <div class="card team-box border-0 bg-transparent mt-3">
                     <div class="position-relative mx-auto">
                         <img
-                            src="images/users/img5.jpg"
+                            src="{team.photo}"
                             alt="team"
                             height="200"
                             class="img-fluid rounded-circle img-thumbnail"
                         />
                         <ul class="team-social list-unstyled">
                             <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-facebook"></i></a
+                                <a href="{team.linkedin}" class="primary-link" aria-label="LinkedIn"
+                                    ><i class="mdi mdi-linkedin"></i></a
                                 >
                             </li>
                             <li class="my-1">
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-twitter"></i></a
+                                <a href="{team.instagram}" class="primary-link" aria-label="Instagram"
+                                    ><i class="mdi mdi-instagram"></i></a
                                 >
                             </li>
                             <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-skype"></i></a
+                                <a href="{team.github}" class="primary-link" aria-label="Github"
+                                    ><i class="mdi mdi-github"></i></a
                                 >
                             </li>
                         </ul>
                     </div>
                     <div class="card-body text-center">
                         <h6 class="mb-0">
-                            <a href="#" class="primary-link">Wade G. Wilhite</a>
+                            <a href="#" class="primary-link">{team.name}</a>
                         </h6>
-                        <p class="text-muted fs-14 mb-0">CEO/Founder</p>
+                        <p class="text-muted fs-14 mb-0">{team.position ?? "-"}</p>
                     </div>
                 </div>
                 <!--end card-->
             </div>
+            {/each}
             <!--end col-->
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card team-box border-0 bg-transparent mt-3">
-                    <div class="position-relative mx-auto">
-                        <img
-                            src="images/users/img6.jpg"
-                            alt="team"
-                            class="img-fluid rounded-circle img-thumbnail"
-                        />
-                        <ul class="team-social list-unstyled">
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-facebook"></i></a
-                                >
-                            </li>
-                            <li class="my-1">
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-twitter"></i></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-skype"></i></a
-                                >
-                            </li>
-                        </ul>
-                        <!--end team-social-->
-                    </div>
-                    <div class="card-body text-center">
-                        <h6 class="mb-0">
-                            <a href="#" class="primary-link">William S. Blay</a>
-                        </h6>
-                        <p class="text-muted fs-14 mb-0">CTO/Co-Founder</p>
-                    </div>
-                </div>
-                <!--end card-->
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card team-box border-0 bg-transparent mt-3">
-                    <div class="position-relative mx-auto">
-                        <img
-                            src="images/users/img7.jpg"
-                            alt="team"
-                            class="img-fluid rounded-circle img-thumbnail"
-                        />
-                        <ul class="team-social list-unstyled">
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-facebook"></i></a
-                                >
-                            </li>
-                            <li class="my-1">
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-twitter"></i></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-skype"></i></a
-                                >
-                            </li>
-                        </ul>
-                        <!--end team-social-->
-                    </div>
-                    <div class="card-body text-center">
-                        <h6 class="mb-0">
-                            <a href="#" class="primary-link"
-                                >Matthew B. Morales</a
-                            >
-                        </h6>
-                        <p class="text-muted fs-14 mb-0">Web Designer</p>
-                    </div>
-                </div>
-                <!--end card-->
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card team-box border-0 bg-transparent mt-3">
-                    <div class="position-relative mx-auto">
-                        <img
-                            src="images/users/img8.jpg"
-                            alt="team"
-                            class="img-fluid rounded-circle img-thumbnail"
-                        />
-                        <ul class="team-social list-unstyled">
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-facebook"></i></a
-                                >
-                            </li>
-                            <li class="my-1">
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-twitter"></i></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="primary-link"
-                                    ><i class="mdi mdi-skype"></i></a
-                                >
-                            </li>
-                        </ul>
-                        <!--end team-social-->
-                    </div>
-                    <div class="card-body text-center">
-                        <h6 class="mb-0">
-                            <a href="#" class="primary-link">Luke L. Johnston</a
-                            >
-                        </h6>
-                        <p class="text-muted fs-14 mb-0">Web Developer</p>
-                    </div>
-                </div>
-                <!--end card-->
-            </div>
-            <!--end col-->
         </div>
         <!--end row-->
         <!--END TEAM-->
@@ -1095,9 +1031,13 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="text-center text-white">
-                    <h2 class="mb-3">Mari mulai bersama Torkata Tech Solution</h2>
+                    <h2 class="mb-3">
+                        Mari mulai bersama Torkata Tech Solution
+                    </h2>
                     <p class="text-white-50 mb-0">
-                        Kami siap membantu Anda membangun solusi digital yang inovatif, efektif, dan efisien untuk mendukung pertumbuhan bisnis dan institusi Anda.
+                        Kami siap membantu Anda membangun solusi digital yang
+                        inovatif, efektif, dan efisien untuk mendukung
+                        pertumbuhan bisnis dan institusi Anda.
                     </p>
                     <div class="mt-4 pt-4">
                         <a
@@ -1124,139 +1064,62 @@
                 <div class="text-center mb-4">
                     <h3>Blog & Artikel</h3>
                     <p class="text-muted mt-2 mb-0">
-                        Temukan insight, tips, dan berita terbaru seputar teknologi, pengembangan digital, serta update dari Torkata Tech Solution.
+                        Temukan insight, tips, dan berita terbaru seputar
+                        teknologi, pengembangan digital, serta update dari
+                        Torkata Tech Solution.
                     </p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="card blog-box border-0 mt-4">
-                    <div class="blog-img position-relative">
-                        <img
-                            src="images/blog/blog-01.jpg"
-                            alt="Blog"
-                            class="img-fluid rounded"
-                        />
-                        <div class="bg-overlay rounded"></div>
-                        <div class="author">
-                            <h6 class="fs-16 mb-0">
-                                <i
-                                    class="mdi mdi-account-outline fs-17 align-middle me-1"
-                                ></i>
-                                Calvin Carlo
-                            </h6>
-                            <small
-                                ><i
-                                    class="mdi mdi-clock-outline fs-17 align-middle me-1"
-                                ></i> 20th March 2021</small
-                            >
+
+            <!-- {data.home.news} -->
+            {#each data.home.data.news as news}
+                <!-- <li>{news}</li> -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-box border-0 mt-4">
+                        <div class="blog-img position-relative">
+                            <img
+                                src="{news.thumbnail}"
+                                alt="Blog"
+                                style="height: 250px; object-fit: cover;"
+                                class="img-fluid rounded"
+                            />
+                            <div class="bg-overlay rounded"></div>
+                            <div class="author">
+                                <h6 class="fs-16 mb-0">
+                                    <i
+                                        class="mdi mdi-account-outline fs-17 align-middle me-1"
+                                    ></i>
+                                    {news.author.name}
+                                </h6>
+                                <small
+                                    ><i
+                                        class="mdi mdi-clock-outline fs-17 align-middle me-1"
+                                    ></i> {news.created_at}</small
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-3">
-                        <a href="#" class="primary-link">
-                            <h6 class="fs-20">
-                                Doing a cross country road trip
-                            </h6>
-                        </a>
-                        <p class="text-muted">
-                            We craft digital, graphic and dimensional thinking,
-                            to create category leading brand.
-                        </p>
                         <div class="mt-3">
-                            <a href="#" class="text-primary"
-                                >Read More <i
-                                    class="mdi mdi-arrow-right align-middle"
-                                ></i></a
-                            >
+                            <a href="#" class="primary-link">
+                                <h6 class="fs-20">
+                                    {news.author.title}
+                                </h6>
+                            </a>
+                            <p class="text-muted">
+                                {news.content.substring(0, 100)}... 
+                            </p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary"
+                                    >Read More <i
+                                        class="mdi mdi-arrow-right align-middle"
+                                    ></i></a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card blog-box border-0 mt-4">
-                    <div class="blog-img position-relative">
-                        <img
-                            src="images/blog/blog-02.jpg"
-                            alt="Blog"
-                            class="img-fluid rounded"
-                        />
-                        <div class="bg-overlay rounded"></div>
-                        <div class="author">
-                            <h6 class="fs-16 mb-0">
-                                <i
-                                    class="mdi mdi-account-outline fs-17 align-middle me-1"
-                                ></i>
-                                Theresa Sinclair
-                            </h6>
-                            <small
-                                ><i
-                                    class="mdi mdi-clock-outline fs-17 align-middle me-1"
-                                ></i> 01th July 2021</small
-                            >
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <a href="#" class="primary-link">
-                            <h6 class="fs-20">New exhibition at our Museum</h6>
-                        </a>
-                        <p class="text-muted">
-                            Even the all-powerful Pointing has no control about
-                            the blind almost unorthographic.
-                        </p>
-                        <div class="mt-3">
-                            <a href="#" class="text-primary"
-                                >Read More <i
-                                    class="mdi mdi-arrow-right align-middle"
-                                ></i></a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card blog-box border-0 mt-4">
-                    <div class="blog-img position-relative">
-                        <img
-                            src="images/blog/blog-03.jpg"
-                            alt="Blog"
-                            class="img-fluid rounded"
-                        />
-                        <div class="bg-overlay rounded"></div>
-                        <div class="author">
-                            <h6 class="fs-16 mb-0">
-                                <i
-                                    class="mdi mdi-account-outline fs-17 align-middle me-1"
-                                ></i>
-                                Ruben Reed
-                            </h6>
-                            <small
-                                ><i
-                                    class="mdi mdi-clock-outline fs-17 align-middle me-1"
-                                ></i> 25th July 2021</small
-                            >
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <a href="#" class="primary-link">
-                            <h6 class="fs-20">
-                                Design your apps in your own way
-                            </h6>
-                        </a>
-                        <p class="text-muted">
-                            Pityful a rethoric question ran over her cheek, then
-                            she continued her way.
-                        </p>
-                        <div class="mt-3">
-                            <a href="#" class="text-primary"
-                                >Read More <i
-                                    class="mdi mdi-arrow-right align-middle"
-                                ></i></a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/each}
         </div>
     </div>
 </section>
@@ -1270,7 +1133,9 @@
                 <div class="text-center mb-5">
                     <h3>Hubungi Kami</h3>
                     <p class="text-muted mt-2">
-                        Silakan hubungi kami untuk konsultasi, pertanyaan, atau kebutuhan solusi digital Anda. Tim kami siap membantu Anda!
+                        Silakan hubungi kami untuk konsultasi, pertanyaan, atau
+                        kebutuhan solusi digital Anda. Tim kami siap membantu
+                        Anda!
                     </p>
                 </div>
             </div>
@@ -1281,29 +1146,29 @@
                     <p class="mb-3">
                         <i
                             class="mdi mdi-email-outline align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">support@website.com</span>
+                        ></i> <span class="fw-medium">{data.information.data.information.email}</span>
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-web align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">www.website.com</span>
+                        ></i> <span class="fw-medium">www.torakatatech.com</span>
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-phone align-middle text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">+245 1234 5678</span>
+                        ></i> <span class="fw-medium">{data.information.data.information.phone}</span>
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-hospital-building text-muted fs-20 me-2"
-                        ></i> <span class="fw-medium">9:00 AM - 6:00 PM</span>
+                        ></i> <span class="fw-medium">08:00 - 22:00</span>
                     </p>
                     <p class="mb-3">
                         <i
                             class="mdi mdi-map-marker-outline text-muted fs-20 me-2"
                         ></i>
                         <span class="fw-medium"
-                            >412, Plantation Rd, Morehead City, NC, 28557.</span
+                            >{data.information.data.information.address}</span
                         >
                     </p>
                 </div>

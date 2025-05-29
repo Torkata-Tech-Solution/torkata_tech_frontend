@@ -1,5 +1,5 @@
 <script>
-    const { children } = $props();
+    const { children, data } = $props();
 </script>
 
 <!--start page Loader -->
@@ -38,19 +38,13 @@
                     <a class="nav-link active" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#services">Layanan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#client">Client</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#price">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">Faq</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about">Tentang</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a
@@ -64,37 +58,31 @@
                         Blog <i class="mdi mdi-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="nav-link" href="#blog">Blog</a></li>
-                        <li>
-                            <a class="nav-link" href="blog-list.html"
-                                >Blog List</a
-                            >
-                        </li>
-                        <li>
-                            <a class="nav-link" href="blog-details.html"
-                                >Blog Details</a
-                            >
-                        </li>
+                        <li><a class="nav-link" href="/blog">Semua</a></li>
+                        {#each data.information.data.news_categories as category}
+                            <li><a class="nav-link" href="/blog/category/{category.slug}">{category.name}</a></li>
+                        {/each}
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact">Kontak</a>
                 </li>
             </ul>
             <!--end navbar-nav-->
             <ul class="list-inline mb-0 ps-lg-4 ms-2">
                 <li class="list-inline-item">
-                    <a href="#" class="primary-link" aria-label=""
-                        ><i class="mdi mdi-facebook"></i></a
+                    <a
+                        href={data.information.data.information.linkedin}
+                        class="primary-link"
+                        aria-label="Linkedin"
+                        ><i class="mdi mdi-linkedin"></i></a
                     >
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="primary-link" aria-label=""
-                        ><i class="mdi mdi-twitter"></i></a
-                    >
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" class="primary-link" aria-label=""
+                    <a
+                        href={data.information.data.information.instagram}
+                        class="primary-link"
+                        aria-label="Intagram"
                         ><i class="mdi mdi-instagram"></i></a
                     >
                 </li>
@@ -117,23 +105,8 @@
                     <ul class="list-inline social-list mb-0">
                         <li class="list-inline-item">
                             <a
-                                href="https://facebook.com"
-                                class="social-icon footer-link"
-                                aria-label="Facebook"
-                                ><i class="mdi mdi-facebook"></i></a
-                            >
-                        </li>
-                        <li class="list-inline-item">
-                            <a
-                                href="https://twitter.com"
-                                class="social-icon footer-link"
-                                aria-label="Twitter"
-                                ><i class="mdi mdi-twitter"></i></a
-                            >
-                        </li>
-                        <li class="list-inline-item">
-                            <a
-                                href="https://linkedin.com"
+                                href={data.information.data.information
+                                    .linkedin}
                                 class="social-icon footer-link"
                                 aria-label="LinkedIn"
                                 ><i class="mdi mdi-linkedin"></i></a
@@ -141,10 +114,28 @@
                         </li>
                         <li class="list-inline-item">
                             <a
-                                href="https://plus.google.com"
+                                href={data.information.data.information
+                                    .instagram}
                                 class="social-icon footer-link"
-                                aria-label="Google Plus"
-                                ><i class="mdi mdi-google-plus"></i></a
+                                aria-label="Instagram"
+                                ><i class="mdi mdi-instagram"></i></a
+                            >
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                href={data.information.data.information
+                                    .facebook}
+                                class="social-icon footer-link"
+                                aria-label="Facebook"
+                                ><i class="mdi mdi-facebook"></i></a
+                            >
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                href={data.information.data.information.twitter}
+                                class="social-icon footer-link"
+                                aria-label="Twitter"
+                                ><i class="mdi mdi-twitter"></i></a
                             >
                         </li>
                     </ul>
@@ -170,7 +161,7 @@
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
-                        &copy; Torkata Tech Soluction -
+                        &copy; {data.information.data.information.name} -
                         <a
                             href="https://themeforest.net/search/themesdesign"
                             class="text-muted">PT. Torkata Jaya Persada</a
@@ -200,19 +191,15 @@
                     ></button>
                 </div>
                 <div class="ratio ratio-16x9">
-                    <video id="VisaChipCardVideo" class="video-box" controls>
-                        <source
-                            src="https://www.w3schools.com/html/mov_bbb.mp4"
-                            type="video/mp4"
-                        />
-                        <track
-                            kind="captions"
-                            src="captions_en.vtt"
-                            srclang="en"
-                            label="English captions"
-                            default
-                        />
-                    </video>
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/Tw_By9ymAFs?si=Wl3yWIT6k2cBZrdT"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
                 </div>
             </div>
             <!--end modal-body-->
