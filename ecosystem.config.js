@@ -1,7 +1,7 @@
 // ecosystem.config.js
 module.exports = {
   apps : [{
-    name   : "Torakatatech_sveltekit", // Nama aplikasi Anda
+    name   : "torakatatech_front", // Nama aplikasi Anda
     script : "build/index.js", // Jalur ke entry point server SvelteKit Anda
     // Jika Anda menggunakan adapter Node, biasanya ini adalah `build/index.js`
     // Pastikan jalur ini benar sesuai dengan output build Anda.
